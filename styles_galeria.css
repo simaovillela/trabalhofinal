@@ -1,0 +1,41 @@
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.quadrado {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+}
+
+.imagem {
+    position: relative;
+}
+
+.imagem img {
+    width: 20%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.imagem p {
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+}

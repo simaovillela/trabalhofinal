@@ -1,0 +1,17 @@
+.tela_principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_simao {
+    margin-right: 50px;
+    margin-left: 50px;
+    max-width: 40%; 
+}
+
+p {
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: #333; 
+    margin-bottom: 20px; 
+}

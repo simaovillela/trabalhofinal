@@ -1,0 +1,27 @@
+form {
+    margin-top: 50px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+#nomeCompleto, #tipoFeedback, #comentario {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#botao_form {
+    background-color: #66615f;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+
+}

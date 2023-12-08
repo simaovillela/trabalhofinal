@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cabecalho {
+    text-align: center;
+    line-height: 0; 
+}
+
+.imagem_cabecalho {
+    width: 100%; 
+    height: 50px; 
+    max-height: 200px; 
+    object-fit: cover;
+   
+}
+
+.menu_principal {
+    background-color: #ea90eb;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.botao_go {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #66615f;
+    color: white;
+    border: 1px solid #66615f;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block; 
+}
+#barra_pesquisa {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block; 
+}
+
+#barra_pesquisa:hover {
+    cursor: text;
+}
+
+
+.menu_direito {
+    background-color: #ea90eb;
+    margin-top: auto;
+    padding: 20px;
+    flex-direction: column;
+    width: 30%;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    height: 85%; 
+    box-sizing: border-box; 
+    border: solid 8px #8e807a;
+}
+
+.menu_principal a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 10px;
+    padding-left: 100px;
+}
+
+
+.tela_principal {
+    background: #f7c114;
+    width: 70%;
+    height: 550px;
+    padding: 20px;
+    margin: 0;
+    border: solid 8px #8e807a;
+}
+
+.rodape {
+    color: #000000;
+    text-align: left;
+    padding: 1em;
+    position: absolute;
+    margin-top: 0px;    
+    width: 100%;
+    border: solid 8px #8e807a;
+    padding: 20px;
+}
+
+.artigos img {
+    max-width: 40%;
+    height: 25%;
+    display: inline-block;
+}
+
+articles, section{
+    display: inline-block;
+}
+
+.artigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.artigo {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.conteudo-artigo {
+    padding: 0 15px;
+}

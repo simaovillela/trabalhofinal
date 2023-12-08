@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles_contato.css">
+</head>
+<body>
+
+<header class="cabecalho">
+    <img class="imagem_cabecalho" src="fundo_menu.jpg">
+</header>
+
+<nav class="menu_principal">
+    <a href="index.html">INÍCIO</a>
+    <a href="sobre_mim.html">SOBRE MIM</a>
+    <a href="contato.html">CONTATO</a>
+    <a href="galeria.html">GALERIA</a>    
+    <div class="container">
+        <input id="barra_pesquisa" type="text" placeholder="Search query">
+        <button class="botao_go">Go!</button>
+    </div>
+</nav>
+
+
+<nav class="menu_direito">
+    <h1 class="titulo_artigos">Artigos</h1>
+    <ul>
+        <li><a href="academia.html">Academia</a></li>
+        <li><a href="livros.html">Livros</a></li>
+    </ul>
+</nav>
+
+<main class="tela_principal">
+    <form id="formContato">
+        <label for="nomeCompleto">Nome Completo:</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+
+        <label for="tipoFeedback">Tipo de Feedback:</label>
+        <select id="tipoFeedback" name="tipoFeedback" required>
+            <option value="elogio">Elogio</option>
+            <option value="reclamacao">Reclamação</option>
+        </select>
+
+        <label for="comentario">Comentário:</label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+        <button id="botao_form" type="button" onclick="
+            if(document.getElementById('formContato').checkValidity())
+            {alert('Formulario enviado com sucesso!');}
+            else{alert('Por favor, preencha corretamente os campos obrigatórios.');}">Enviar</button>
+    </form>
+</main>
+
+<footer class="rodape">
+    &copy; Copyright 2050 by Simão. All rights reversed
+</footer>
+
+</body>
+</html>
